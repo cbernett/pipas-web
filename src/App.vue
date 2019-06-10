@@ -1,23 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <div class="topbar">
-        <img alt="Top Bar" src="./assets/pipas_topbar.svg">
-      </div>
-      <router-link to="/">
-        <img alt="Pipas Labs" src="./assets/pipas_logo_black.svg">
-      </router-link>
-      <p></p>
-      <div id="navitem">
-        <router-link to="/mission">A Missão</router-link>
-      </div>
-      <div id="navitem">
-        <router-link to="/about">O Que Fazemos</router-link>
-      </div>
-      <div id="navitem">
-        <router-link to="/contact">Fale Conosco</router-link>
-      </div>
-    </div>
+    <TopBar/>
+    <TheNav/>
     <router-view/>
     <TheFooter/>
   </div>
@@ -26,11 +10,15 @@
 
 <script>
 // @ is an alias to /src
+import TopBar from "@/components/TopBar.vue";
+import TheNav from "@/components/TheNav.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 export default {
   name: "app",
   components: {
+    TopBar,
+    TheNav,
     TheFooter
   }
 };
@@ -51,37 +39,22 @@ body {
   padding: 0;
   margin: 0;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    &.router-link-exact-active {
-      color: #02eee7;
-    }
-  }
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-#navitem {
-  padding: 10px;
-  display: inline;
+
+.main {
+  flex-grow: 1;
 }
-.topbar {
-  width: 100%;
-  height: 7px;
-  overflow: hidden;
+
+img {
   padding: 0;
   margin: 0;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: block;
-
-  img {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: block;
-  }
+  width: 100px;
+  align: center;
+  //display: block;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <InstagramFeed
-      msg="We combine technology and play to build capacity and amplify voices in urban peripheries around the world."
+      msg="Pipas Labs combina brincadeiras e tecnologia para conectar o mundo sem fronteiras."
     />
     <Footer/>
   </div>

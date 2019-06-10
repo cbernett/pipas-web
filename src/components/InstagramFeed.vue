@@ -1,6 +1,8 @@
 <template>
   <div class="intro">
-    <div>{{ msg }}</div>
+    <div class="mission_container">
+      <div class="mission">{{ msg }}</div>
+    </div>
     <div class="embedsocial-hashtag" data-ref="d3458013ca761f611efff0e0964eac64fecb948c"></div>
   </div>
 </template>
@@ -41,5 +43,17 @@ li {
 }
 a {
   color: #42b983;
+}
+.mission_container {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.mission {
+  font-weight: lighter;
+  font-size: 26px;
+  line-height: 36px;
+  width: 600px;
+  display: inline-block;
 }
 </style>
