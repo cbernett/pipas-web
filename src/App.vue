@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <TopBar/>
-    <TheNav/>
-    <router-view/>
-    <TheFooter/>
+    <div class="home">
+      <TopBar/>
+      <TheNav/>
+      <router-view/>
+    </div>
+    <div class="footer">
+      <TheFooter/>
+    </div>
   </div>
 </template>
 
@@ -39,22 +43,26 @@ body {
   padding: 0;
   margin: 0;
 }
-
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+.home {
+  //min-height: 100vh;
+  //max-width: 1280px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer {
+  margin: auto auto 0 auto;
+}
+.text_lg {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.main {
-  flex-grow: 1;
-}
-
-img {
-  padding: 0;
-  margin: 0;
-  width: 100px;
-  align: center;
-  //display: block;
+.text_sm {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  text-align: left;
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <div class="footer_container">
-    <div class="item__left">
+    <div class="item item__left">
       <h3 class="item__h3">Pipas Labs, Inc.</h3>
       <h4 class="item__h4">© 2018 All Rights Reserved</h4>
     </div>
-    <div class="item__middle">
+    <div class="item item__middle">
       <img alt="Name Logo" src="@/assets/pipas_logo_name_white.svg">
     </div>
-    <div class="item__right">
+    <div class="item item__right">
       <h4 class="item__h4">Rio de Janeiro, RJ</h4>
       <h4 class="item__h4">New York, NY</h4>
     </div>
@@ -23,28 +23,32 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .footer_container {
+  position: relative;
   display: flex;
-  flex-direction: row;
   background-color: black;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  //text-align: center;
   height: 100px;
-  flex-shrink: 0;
 }
 
 .item {
   &__left {
-    justify-content: center;
     text-align: left;
+    width: 25%;
+    padding-left: 30px;
   }
   &__middle {
     text-align: center;
+    width: 50%;
+    img {
+      width: 83px;
+    }
   }
   &__right {
-    justify-content: center;
     text-align: left;
+    width: 25%;
   }
   &__h3 {
     color: white;
@@ -69,9 +73,6 @@ export default {
     padding: 0;
     margin: 0;
     line-height: 15px;
-  }
-  img {
-    width: 83px;
   }
 }
 </style>

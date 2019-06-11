@@ -1,5 +1,5 @@
 <template>
-  <div class="intro">
+  <div class="intro container">
     <div class="mission_container">
       <div class="mission">{{ msg }}</div>
     </div>
