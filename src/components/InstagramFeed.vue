@@ -3,7 +3,9 @@
     <div class="mission_container">
       <div class="mission">{{ msg }}</div>
     </div>
-    <div class="embedsocial-hashtag" data-ref="d3458013ca761f611efff0e0964eac64fecb948c"></div>
+    <div class="feed">
+      <div class="embedsocial-hashtag" data-ref="d3458013ca761f611efff0e0964eac64fecb948c"></div>
+    </div>
   </div>
 </template>
 
@@ -44,6 +46,11 @@ li {
 a {
   color: #42b983;
 }
+.intro_container {
+  width: auto;
+  max-width: auto;
+}
+
 .mission_container {
   width: 100%;
   text-align: center;
@@ -55,5 +62,19 @@ a {
   line-height: 36px;
   width: 600px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .mission_container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .mission {
+    font-weight: lighter;
+    font-size: 22px;
+    line-height: 28px;
+    width: 90%;
+  }
 }
 </style>

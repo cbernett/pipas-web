@@ -31,22 +31,40 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #app {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  //font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
   padding: 0;
   margin: 0;
+  width: auto;
+  max-width: auto;
+  //background-color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  #app {
+    width: 100%;
+    height: auto;
+    //padding: 0;
+    //margin: 0;
+  }
+}
+
 .home {
-  //min-height: 100vh;
-  //max-width: 1280px;
+  flex: 1 0 auto;
 }
+
+.footer {
+  flex-shrink: 0;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -60,8 +78,8 @@ body {
 }
 
 .text_sm {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: normal;
   text-align: left;
 }

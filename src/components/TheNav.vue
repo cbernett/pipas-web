@@ -27,7 +27,8 @@ export default {
 
 <style lang="scss">
 #nav {
-  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   a {
     font-weight: 900;
     color: #000000;
@@ -39,8 +40,30 @@ export default {
     }
   }
 }
+
 #navitem {
   padding: 10px;
   display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav {
+    padding: 20px;
+    a {
+      font-weight: 900;
+      color: #000000;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-decoration: none;
+      &.router-link-exact-active {
+        color: #02eee7;
+      }
+    }
+  }
+
+  #navitem {
+    padding: 10px;
+    display: inline;
+  }
 }
 </style>

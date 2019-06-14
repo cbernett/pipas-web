@@ -2,23 +2,43 @@
   <div class="contact">
     <div class="fale_hero"></div>
     <div class="content">
-      <div class="text_lg">Fale com a gente.</div>
-      <div class="text_sm_contact">
-        Fica a vontade entrar em contato conosco no seu jeit preferido:
-        <p>
-          Email:
-          <a href="mailto: info@pipaslabs.com" target="_blank">info@pipaslabs.com</a>
-        </p>Facebook:
-        <a href="http://www.facebook.com/pipaslabs" target="_blank">@pipaslabs</a>
-        <p>
-          Instagram:
-          <a href="http://instagram.com/playpipaslabs" target="_blank">@pipaslabs</a>
-        </p>
-        <p>
-          Twitter:
-          <a href="http://twitter.com/playpipaslabs" target="_blank">@playipaslabs</a>
-        </p>
-        <p></p>
+      <h3 class="text_lg">Fale com a gente.</h3>
+      <div
+        class="text_sm left"
+      >Fica a vontade entrar em contato conosco no seu jeito preferido. Estamos abertos para novos colaborações, pareceirias e oportunidades e qualquer forma de apoio.</div>
+      <div class="social">
+        <div class="socialcol">
+          <div class="socialcol__icon">
+            <img src="../assets/email_icon.svg" width="28px" alt="Email">
+          </div>
+          <div class="socialcol__link">
+            <a href="mailto: info@pipaslabs.com" target="_blank">info@pipaslabs.com</a>
+          </div>
+        </div>
+        <div class="socialcol">
+          <div class="socialcol__icon">
+            <img src="../assets/fb_icon.svg" width="18px" alt="Email">
+          </div>
+          <div class="socialcol__link">
+            <a href="http://www.facebook.com/pipaslabs" target="_blank">@pipaslabs</a>
+          </div>
+        </div>
+        <div class="socialcol">
+          <div class="socialcol__icon">
+            <img src="../assets/insta_icon.svg" width="20px" alt="Email">
+          </div>
+          <div class="socialcol__link">
+            <a href="http://instagram.com/playpipaslabs" target="_blank">@playpipaslabs</a>
+          </div>
+        </div>
+        <div class="socialcol">
+          <div class="socialcol__icon">
+            <img src="../assets/twitter_icon.svg" width="20px" alt="Email">
+          </div>
+          <div class="socialcol__link">
+            <a href="http://twitter.com/playpipaslabs" target="_blank">@playipaslabs</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -26,27 +46,69 @@
 
 <style lang="scss">
 .fale_hero {
-  background-image: url("../assets/pipas_fale.jpg");
+  background-image: url("../assets/hero_pipas_fale_02.jpg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  //position: relative;
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   overflow: hidden;
+}
+.center {
+  text-align: center;
 }
 
 .content {
   padding: 10px;
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
   margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .fale_hero {
+    height: 200px;
+  }
+
+  .content {
+    padding: 10px;
+    max-width: 85%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.icon {
+  width: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 120px;
+  align-content: center;
+  position: relative;
+}
+.socialcol {
+  flex: 0 1;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px;
+  display: flex;
+
+  &__icon {
+    //flex: 0;
+    text-align: right;
+    padding-right: 10px;
+  }
+  &__link {
+    text-align: left;
+    //flex: 1;
+  }
+}
+
 .text_sm_contact {
   padding: 10px;
   text-align: left;

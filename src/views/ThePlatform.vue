@@ -12,7 +12,7 @@
 
 <style lang="scss">
 .platform_hero {
-  background-image: url("../assets/pipas_platform.jpg");
+  background-image: url("../assets/hero_pipas_platform.jpg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,5 +32,23 @@
   max-width: 800px;
   text-align: center;
   margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .platform_hero {
+    background-image: url("../assets/hero_pipas_platform.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .content {
+    padding: 10px;
+    max-width: 85%;
+    text-align: center;
+    margin: auto;
+  }
 }
 </style>
