@@ -135,5 +135,33 @@ hr.pagebreak {
     text-align: center;
     margin: auto;
   }
+
+.one-third {
+  //float: left;
+  width: 100%;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.img_col {
+  //flex: 0 1;
+  //justify-content: flex-end;
+  text-align: center;
+  //font-size: 14px;
+  //font-weight: 500;
+  //margin: 2px;
+  display: inline;
+}
+
+.img_bar {
+  display:inline-block;
+  //justify-content: space-around;
+  //flex-wrap: wrap;
+  //height: 250px;
+  //align-content: center;
+  margin: 20px 0px 20px 0px;
+  //position: relative;
+}
+
 }
 </style>
