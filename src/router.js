@@ -39,6 +39,12 @@ export default new Router({
       name: "program",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/TheProgram.vue")
+    },
+    {
+      path: "/pipaslabscasavoz",
+      name: "pipaslabscasavoz",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/PipasLabsCasaVoz.vue")
     }
   ]
 });

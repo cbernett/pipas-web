@@ -77,10 +77,15 @@ body {
   font-weight: bold;
 }
 
+.featured_text {
+  font-size: 24px;
+  font-weight: 200;
+}
+
 .text_sm {
   font-size: 16px;
-  line-height: 26px;
-  font-weight: normal;
+  line-height: 24px;
+  font-weight: 300;
   text-align: left;
 }
 </style>

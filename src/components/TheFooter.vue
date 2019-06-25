@@ -30,6 +30,7 @@ export default {
   display: flex;
   justify-content: center;
   flex: 1;
+  margin-top: 20px;
 }
 
 .footer_items {

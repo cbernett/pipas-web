@@ -1,9 +1,10 @@
 <template>
   <div id="nav">
-    <router-link to="/">
-      <img alt="Pipas Labs" src="@/assets/pipas_logo_black.svg">
-    </router-link>
-    <p></p>
+    <div>
+      <router-link to="/">
+        <img alt="Pipas Labs" src="@/assets/pipas_logo_black.svg">
+      </router-link>
+    </div>
     <div id="navitem">
       <router-link to="/mission">SOBRE</router-link>
     </div>
@@ -12,6 +13,9 @@
     </div>
     <div id="navitem">
       <router-link to="/program">Programa</router-link>
+    </div>
+    <div id="navitem">
+      <router-link to="/pipaslabscasavoz">Pipas Labs Casa Voz</router-link>
     </div>
     <div id="navitem">
       <router-link to="/contact">Fale conosco</router-link>
@@ -32,7 +36,7 @@ export default {
   a {
     font-weight: 900;
     color: #000000;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     text-decoration: none;
     &.router-link-exact-active {
@@ -48,9 +52,11 @@ export default {
 
 @media only screen and (max-width: 600px) {
   #nav {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
     a {
-      font-weight: 900;
+      font-weight: 800;
       color: #000000;
       font-size: 11px;
       text-transform: uppercase;
@@ -63,7 +69,7 @@ export default {
 
   #navitem {
     padding: 10px;
-    display: inline;
+    display: inline-block;
   }
 }
 </style>
