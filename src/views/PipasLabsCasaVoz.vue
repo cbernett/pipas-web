@@ -30,14 +30,14 @@
         <div class="title">Educação &amp; Intervenção</div>
         <div class="textblock">
           <div class="text_sm one-third">
-            <h4 class="secondary">Cursos</h4>Os cursos variam desde o estilo de visão global até o de tópico específico e variam em duração (de semestre a ano e em andamento). O currículo de visão geral é projetado para desenvolver uma fundação sólida em pensamento criativo e habilidades técnicas como base para estudos continuados. Os cursos de tópicos específicos aprofundam em temas como design e desenvolvimento de jogos, soluções de tecnologia para impacto local ou codificação visualizações de dados.</p>
+            <h4 class="secondary">Cursos</h4>Os cursos variam desde o estilo de visão global até o de tópico específico e variam em duração (de semestre a ano e em andamento). O currículo de visão geral é projetado para desenvolver uma fundação sólida em pensamento criativo e habilidades técnicas como base para estudos continuados. Os cursos de tópicos específicos aprofundam em temas como design e desenvolvimento de jogos, soluções de tecnologia para impacto local ou codificação visualizações de dados.
           </div>
           <div class="text_sm one-third">
             <h4 class="secondary">Oficinas</h4>As oficinas variam de 1 a 4 dias de duração e estão focadas na experimentação colaborativa que combina cultura, pensamento criativo e tecnologia para gerar interesse no estudo contínuo, bem como novas idéias para inovação tecnológica relacionada à comunidade. As atividades incluem desenho condutivo, criação com LEDs, robôs que desenham e personalização e empinam pipas com o dispositivo do Pipas.
           </div>
-          <div
-            class="text_sm one-third"
-          ><h4 class="secondary">Ações &amp; Eventos</h4>Os cursos variam desde o estilo de visão global até o de tópico específico e variam em duração (de semestre a ano e em andamento). O currículo de visão geral é projetado para desenvolver uma fundação sólida em pensamento criativo e habilidades técnicas como base para estudos continuados. Os cursos de tópicos específicos aprofundam em temas como design e desenvolvimento de jogos, soluções de tecnologia para impacto local ou codificação visualizações de dados.</div>
+          <div class="text_sm one-third">
+            <h4 class="secondary">Ações &amp; Eventos</h4>Os cursos variam desde o estilo de visão global até o de tópico específico e variam em duração (de semestre a ano e em andamento). O currículo de visão geral é projetado para desenvolver uma fundação sólida em pensamento criativo e habilidades técnicas como base para estudos continuados. Os cursos de tópicos específicos aprofundam em temas como design e desenvolvimento de jogos, soluções de tecnologia para impacto local ou codificação visualizações de dados.
+          </div>
         </div>
       </div>
     </div>
@@ -136,32 +136,31 @@ hr.pagebreak {
     margin: auto;
   }
 
-.one-third {
-  //float: left;
-  width: 100%;
-  padding-right: 20px;
-  font-size: 14px;
-  line-height: 20px;
-}
-.img_col {
-  //flex: 0 1;
-  //justify-content: flex-end;
-  text-align: center;
-  //font-size: 14px;
-  //font-weight: 500;
-  //margin: 2px;
-  display: inline;
-}
+  .one-third {
+    //float: left;
+    width: 100%;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .img_col {
+    //flex: 0 1;
+    //justify-content: flex-end;
+    text-align: center;
+    //font-size: 14px;
+    //font-weight: 500;
+    //margin: 2px;
+    display: inline;
+  }
 
-.img_bar {
-  display:inline-block;
-  //justify-content: space-around;
-  //flex-wrap: wrap;
-  //height: 250px;
-  //align-content: center;
-  margin: 20px 0px 20px 0px;
-  //position: relative;
-}
-
+  .img_bar {
+    display: inline-block;
+    //justify-content: space-around;
+    //flex-wrap: wrap;
+    //height: 250px;
+    //align-content: center;
+    margin: 20px 0px 20px 0px;
+    //position: relative;
+  }
 }
 </style>
