@@ -77,10 +77,6 @@
   }
 }
 
-.icon {
-  width: 40px;
-}
-
 .social {
   display: flex;
   justify-content: space-around;

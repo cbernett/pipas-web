@@ -1,11 +1,11 @@
 <template>
-  <div class="mission">
-    <div class="mission_hero">&nbsp;</div>
+  <div>
+    <div class="mission_hero"></div>
     <div class="content">
       <h3 class="text_lg">O Que é Pipas Labs</h3>
-      <h4
+      <div
         class="text_sm"
-      >Pipas Labs é uma plataforma de tecnologia e um programa educacional que combina pipas, eletrônica e celulares para estimular a expressão criativa e construir capacidades em comunidades marginalizadas. A plataforma captura os movimentos de pipas com um dispositivo bluetooth e visualiza esses movimentos em um aplicativo jogável. As oficinas usam a plataforma como base para aumentar habilidades e conhecimentos de arte, design e tecnologia. O projeto procura ampliar a inovação local, participação na economia e diversidade na expressão pessoal dos jovens no Brasil.</h4>
+      >Pipas Labs é uma plataforma de tecnologia e um programa educacional que combina pipas, eletrônica e celulares para estimular a expressão criativa e construir capacidades em comunidades marginalizadas. A plataforma captura os movimentos de pipas com um dispositivo bluetooth e visualiza esses movimentos em um aplicativo jogável. As oficinas usam a plataforma como base para aumentar habilidades e conhecimentos de arte, design e tecnologia. O projeto procura ampliar a inovação local, participação na economia e diversidade na expressão pessoal dos jovens no Brasil.</div>
       <p></p>
       <div class="embed-container">
         <iframe

@@ -7,14 +7,14 @@
         class="mission"
       >Pipas Labs Casa Voz é um laboratório de pesquisa e desenvolvimento de inovação tecnológica com e para as comunidades do Complexo do Alemão no Rio de Janeiro.</div>
       <div class="img_bar">
-        <div class="img_col">
-          <img src="../assets/plcv_01.jpg" width="250px" alt="Pipas Labs Casa Voz">
+        <div class="img_col" id="img_col_3">
+          <img src="../assets/plcv_01.jpg" width="250px" height="188px" alt="Pipas Labs Casa Voz">
+        </div>
+        <div class="img_col" id="img_col_2">
+          <img src="../assets/plcv_02.jpg" width="250px" height="188px" alt="Pipas Labs Casa Voz">
         </div>
         <div class="img_col">
-          <img src="../assets/plcv_02.jpg" width="250px" alt="Pipas Labs Casa Voz">
-        </div>
-        <div class="img_col">
-          <img src="../assets/plcv_03.jpg" width="250px" alt="Pipas Labs Casa Voz">
+          <img src="../assets/plcv_03.jpg" width="250px" height="188px" alt="Pipas Labs Casa Voz">
         </div>
       </div>
       <div
@@ -69,7 +69,7 @@ hr.pagebreak {
   font-size: 24px;
   text-align: left;
   font-weight: 200;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
@@ -125,8 +125,21 @@ hr.pagebreak {
 }
 
 @media only screen and (max-width: 600px) {
+  #img_col_2 {
+    display: none;
+  }
+  #img_col_3 {
+    display: none;
+  }
   .plcv_hero {
     height: 200px;
+  }
+  .mission {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .content {
@@ -159,7 +172,8 @@ hr.pagebreak {
     //flex-wrap: wrap;
     //height: 250px;
     //align-content: center;
-    margin: 20px 0px 20px 0px;
+    height: 100%;
+    padding: 20px 0px 40px 0px;
     //position: relative;
   }
 }

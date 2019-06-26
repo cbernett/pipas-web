@@ -53,10 +53,10 @@ a {
 
 .mission_container {
   width: 100%;
-  text-align: center;
   padding-bottom: 20px;
 }
 .mission {
+  text-align: center;
   font-weight: lighter;
   font-size: 26px;
   line-height: 36px;
@@ -75,6 +75,7 @@ a {
     font-size: 22px;
     line-height: 28px;
     width: 90%;
+    padding-top: 0;
   }
 }
 </style>
